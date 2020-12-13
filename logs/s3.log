@@ -1,0 +1,1705 @@
+Calling target program-options parser
+[12:31:39.142] [bmv2] [D] [thread 1334] Set default default entry for table 'MyIngress.label_exact': MyIngress.drop - 
+Adding interface s3-eth1 as port 1
+[12:31:39.142] [bmv2] [D] [thread 1334] Adding interface s3-eth1 as port 1
+Adding interface s3-eth2 as port 2
+[12:31:39.170] [bmv2] [D] [thread 1334] Adding interface s3-eth2 as port 2
+Adding interface s3-eth3 as port 3
+[12:31:39.198] [bmv2] [D] [thread 1334] Adding interface s3-eth3 as port 3
+I1213 12:31:39.230183700    1334 server_builder.cc:247]      Synchronous server. Num CQs: 1, Min pollers: 1, Max Pollers: 2147483647, CQ timeout (msec): 1000
+Server listening on 0.0.0.0:50053
+[12:31:39.232] [bmv2] [I] [thread 1334] Starting Thrift server on port 9092
+[12:31:39.234] [bmv2] [I] [thread 1334] Thrift server was started
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Processing packet received on port 1
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Parser 'parser': start
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.234] [bmv2] [T] [thread 1341] [0.0] [cxt 0] Bytes parsed: 14
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Parser 'parser': end
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.234] [bmv2] [T] [thread 1341] [0.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.234] [bmv2] [D] [thread 1341] [0.0] [cxt 0] Egress port is 0
+[12:31:39.234] [bmv2] [D] [thread 1342] [0.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.234] [bmv2] [D] [thread 1342] [0.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.234] [bmv2] [D] [thread 1342] [0.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.234] [bmv2] [D] [thread 1342] [0.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.234] [bmv2] [D] [thread 1342] [0.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.234] [bmv2] [D] [thread 1346] [0.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Processing packet received on port 1
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Parser 'parser': start
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.268] [bmv2] [T] [thread 1341] [1.0] [cxt 0] Bytes parsed: 14
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Parser 'parser': end
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.268] [bmv2] [T] [thread 1341] [1.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.268] [bmv2] [D] [thread 1341] [1.0] [cxt 0] Egress port is 0
+[12:31:39.268] [bmv2] [D] [thread 1342] [1.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.268] [bmv2] [D] [thread 1342] [1.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.268] [bmv2] [D] [thread 1342] [1.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.268] [bmv2] [D] [thread 1342] [1.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.268] [bmv2] [D] [thread 1342] [1.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.268] [bmv2] [D] [thread 1346] [1.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Processing packet received on port 3
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Parser 'parser': start
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.375] [bmv2] [T] [thread 1341] [2.0] [cxt 0] Bytes parsed: 14
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Parser 'parser': end
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.375] [bmv2] [T] [thread 1341] [2.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.375] [bmv2] [D] [thread 1341] [2.0] [cxt 0] Egress port is 0
+[12:31:39.375] [bmv2] [D] [thread 1342] [2.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.375] [bmv2] [D] [thread 1342] [2.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.375] [bmv2] [D] [thread 1342] [2.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.376] [bmv2] [D] [thread 1342] [2.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.376] [bmv2] [D] [thread 1342] [2.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.376] [bmv2] [D] [thread 1346] [2.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Processing packet received on port 2
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Parser 'parser': start
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.424] [bmv2] [T] [thread 1341] [3.0] [cxt 0] Bytes parsed: 14
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Parser 'parser': end
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.424] [bmv2] [T] [thread 1341] [3.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.424] [bmv2] [D] [thread 1341] [3.0] [cxt 0] Egress port is 0
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Processing packet received on port 3
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Parser 'parser': start
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.424] [bmv2] [T] [thread 1341] [4.0] [cxt 0] Bytes parsed: 14
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Parser 'parser': end
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.424] [bmv2] [T] [thread 1341] [4.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.424] [bmv2] [D] [thread 1341] [4.0] [cxt 0] Egress port is 0
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Processing packet received on port 2
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Parser 'parser': start
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.424] [bmv2] [T] [thread 1341] [5.0] [cxt 0] Bytes parsed: 14
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Parser 'parser': end
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.424] [bmv2] [T] [thread 1341] [5.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.424] [bmv2] [D] [thread 1341] [5.0] [cxt 0] Egress port is 0
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Processing packet received on port 3
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Parser 'parser': start
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.424] [bmv2] [T] [thread 1341] [6.0] [cxt 0] Bytes parsed: 14
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Parser 'parser': end
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.424] [bmv2] [T] [thread 1341] [6.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.424] [bmv2] [D] [thread 1341] [6.0] [cxt 0] Egress port is 0
+[12:31:39.424] [bmv2] [D] [thread 1342] [3.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.424] [bmv2] [D] [thread 1342] [3.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.424] [bmv2] [D] [thread 1342] [3.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.424] [bmv2] [D] [thread 1342] [3.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.424] [bmv2] [D] [thread 1342] [3.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.424] [bmv2] [D] [thread 1342] [4.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.424] [bmv2] [D] [thread 1342] [4.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.424] [bmv2] [D] [thread 1342] [4.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.424] [bmv2] [D] [thread 1342] [4.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.424] [bmv2] [D] [thread 1342] [4.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.424] [bmv2] [D] [thread 1342] [5.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.424] [bmv2] [D] [thread 1342] [5.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.424] [bmv2] [D] [thread 1342] [5.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.424] [bmv2] [D] [thread 1342] [5.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.424] [bmv2] [D] [thread 1342] [5.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.424] [bmv2] [D] [thread 1342] [6.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.424] [bmv2] [D] [thread 1342] [6.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.424] [bmv2] [D] [thread 1342] [6.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.424] [bmv2] [D] [thread 1342] [6.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.424] [bmv2] [D] [thread 1342] [6.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.424] [bmv2] [D] [thread 1346] [3.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:39.424] [bmv2] [D] [thread 1346] [4.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:39.424] [bmv2] [D] [thread 1346] [5.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:39.424] [bmv2] [D] [thread 1346] [6.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Processing packet received on port 2
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Parser 'parser': start
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.430] [bmv2] [T] [thread 1341] [7.0] [cxt 0] Bytes parsed: 14
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Parser 'parser': end
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.430] [bmv2] [T] [thread 1341] [7.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.430] [bmv2] [D] [thread 1341] [7.0] [cxt 0] Egress port is 0
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Processing packet received on port 3
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Parser 'parser': start
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.430] [bmv2] [T] [thread 1341] [8.0] [cxt 0] Bytes parsed: 14
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Parser 'parser': end
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.430] [bmv2] [T] [thread 1341] [8.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.430] [bmv2] [D] [thread 1341] [8.0] [cxt 0] Egress port is 0
+[12:31:39.430] [bmv2] [D] [thread 1342] [7.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.430] [bmv2] [D] [thread 1342] [7.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.430] [bmv2] [D] [thread 1342] [7.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.430] [bmv2] [D] [thread 1342] [7.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.430] [bmv2] [D] [thread 1342] [7.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.430] [bmv2] [D] [thread 1342] [8.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.430] [bmv2] [D] [thread 1342] [8.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.430] [bmv2] [D] [thread 1342] [8.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.430] [bmv2] [D] [thread 1342] [8.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.430] [bmv2] [D] [thread 1342] [8.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.430] [bmv2] [D] [thread 1346] [7.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:39.430] [bmv2] [D] [thread 1346] [8.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Processing packet received on port 1
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Parser 'parser': start
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.442] [bmv2] [T] [thread 1341] [9.0] [cxt 0] Bytes parsed: 14
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Parser 'parser': end
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.442] [bmv2] [T] [thread 1341] [9.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.442] [bmv2] [D] [thread 1341] [9.0] [cxt 0] Egress port is 0
+[12:31:39.442] [bmv2] [D] [thread 1342] [9.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.442] [bmv2] [D] [thread 1342] [9.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.442] [bmv2] [D] [thread 1342] [9.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.442] [bmv2] [D] [thread 1342] [9.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.442] [bmv2] [D] [thread 1342] [9.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.442] [bmv2] [D] [thread 1346] [9.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Processing packet received on port 2
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Parser 'parser': start
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.526] [bmv2] [T] [thread 1341] [10.0] [cxt 0] Bytes parsed: 14
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Parser 'parser': end
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.526] [bmv2] [T] [thread 1341] [10.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.526] [bmv2] [D] [thread 1341] [10.0] [cxt 0] Egress port is 0
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Processing packet received on port 3
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Parser 'parser': start
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.527] [bmv2] [T] [thread 1341] [11.0] [cxt 0] Bytes parsed: 14
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Parser 'parser': end
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.527] [bmv2] [T] [thread 1341] [11.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.527] [bmv2] [D] [thread 1341] [11.0] [cxt 0] Egress port is 0
+[12:31:39.527] [bmv2] [D] [thread 1342] [10.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.527] [bmv2] [D] [thread 1342] [10.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.527] [bmv2] [D] [thread 1342] [10.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.527] [bmv2] [D] [thread 1342] [10.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.527] [bmv2] [D] [thread 1342] [10.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.527] [bmv2] [D] [thread 1342] [11.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.527] [bmv2] [D] [thread 1342] [11.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.527] [bmv2] [D] [thread 1342] [11.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.527] [bmv2] [D] [thread 1342] [11.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.527] [bmv2] [D] [thread 1342] [11.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.527] [bmv2] [D] [thread 1346] [10.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:39.527] [bmv2] [D] [thread 1346] [11.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Processing packet received on port 2
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Parser 'parser': start
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.579] [bmv2] [T] [thread 1341] [12.0] [cxt 0] Bytes parsed: 14
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Parser 'parser': end
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.579] [bmv2] [T] [thread 1341] [12.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.579] [bmv2] [D] [thread 1341] [12.0] [cxt 0] Egress port is 0
+[12:31:39.579] [bmv2] [D] [thread 1342] [12.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.579] [bmv2] [D] [thread 1342] [12.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.579] [bmv2] [D] [thread 1342] [12.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.579] [bmv2] [D] [thread 1342] [12.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.579] [bmv2] [D] [thread 1342] [12.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.579] [bmv2] [D] [thread 1346] [12.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Processing packet received on port 1
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Parser 'parser': start
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.626] [bmv2] [T] [thread 1341] [13.0] [cxt 0] Bytes parsed: 14
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Parser 'parser': end
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.626] [bmv2] [T] [thread 1341] [13.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.626] [bmv2] [D] [thread 1341] [13.0] [cxt 0] Egress port is 0
+[12:31:39.626] [bmv2] [D] [thread 1342] [13.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.626] [bmv2] [D] [thread 1342] [13.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.626] [bmv2] [D] [thread 1342] [13.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.626] [bmv2] [D] [thread 1342] [13.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.626] [bmv2] [D] [thread 1342] [13.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.626] [bmv2] [D] [thread 1346] [13.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Processing packet received on port 3
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Parser 'parser': start
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.631] [bmv2] [T] [thread 1341] [14.0] [cxt 0] Bytes parsed: 14
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Parser 'parser': end
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.631] [bmv2] [T] [thread 1341] [14.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.631] [bmv2] [D] [thread 1341] [14.0] [cxt 0] Egress port is 0
+[12:31:39.631] [bmv2] [D] [thread 1342] [14.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.631] [bmv2] [D] [thread 1342] [14.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.631] [bmv2] [D] [thread 1342] [14.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.631] [bmv2] [D] [thread 1342] [14.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.631] [bmv2] [D] [thread 1342] [14.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.631] [bmv2] [D] [thread 1346] [14.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Processing packet received on port 1
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Parser 'parser': start
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.693] [bmv2] [T] [thread 1341] [15.0] [cxt 0] Bytes parsed: 14
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Parser 'parser': end
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.693] [bmv2] [T] [thread 1341] [15.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.693] [bmv2] [D] [thread 1341] [15.0] [cxt 0] Egress port is 0
+[12:31:39.693] [bmv2] [D] [thread 1342] [15.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.693] [bmv2] [D] [thread 1342] [15.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.693] [bmv2] [D] [thread 1342] [15.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.693] [bmv2] [D] [thread 1342] [15.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.693] [bmv2] [D] [thread 1342] [15.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.693] [bmv2] [D] [thread 1346] [15.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Processing packet received on port 2
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Parser 'parser': start
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.699] [bmv2] [T] [thread 1341] [16.0] [cxt 0] Bytes parsed: 14
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Parser 'parser': end
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.699] [bmv2] [T] [thread 1341] [16.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.699] [bmv2] [D] [thread 1341] [16.0] [cxt 0] Egress port is 0
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Processing packet received on port 3
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Parser 'parser': start
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.699] [bmv2] [T] [thread 1341] [17.0] [cxt 0] Bytes parsed: 14
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Parser 'parser': end
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.699] [bmv2] [T] [thread 1341] [17.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.699] [bmv2] [D] [thread 1341] [17.0] [cxt 0] Egress port is 0
+[12:31:39.699] [bmv2] [D] [thread 1342] [16.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.699] [bmv2] [D] [thread 1342] [16.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.699] [bmv2] [D] [thread 1342] [16.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.699] [bmv2] [D] [thread 1342] [16.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.699] [bmv2] [D] [thread 1342] [16.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.699] [bmv2] [D] [thread 1342] [17.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.699] [bmv2] [D] [thread 1342] [17.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.699] [bmv2] [D] [thread 1342] [17.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.699] [bmv2] [D] [thread 1342] [17.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.699] [bmv2] [D] [thread 1342] [17.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.699] [bmv2] [D] [thread 1346] [16.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.699] [bmv2] [D] [thread 1346] [17.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Processing packet received on port 2
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Parser 'parser': start
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.758] [bmv2] [T] [thread 1341] [18.0] [cxt 0] Bytes parsed: 14
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Parser 'parser': end
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.758] [bmv2] [T] [thread 1341] [18.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.758] [bmv2] [D] [thread 1341] [18.0] [cxt 0] Egress port is 0
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Processing packet received on port 2
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Parser 'parser': start
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.758] [bmv2] [T] [thread 1341] [19.0] [cxt 0] Bytes parsed: 14
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Parser 'parser': end
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.758] [bmv2] [T] [thread 1341] [19.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.758] [bmv2] [D] [thread 1341] [19.0] [cxt 0] Egress port is 0
+[12:31:39.758] [bmv2] [D] [thread 1342] [18.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.758] [bmv2] [D] [thread 1342] [18.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.758] [bmv2] [D] [thread 1342] [18.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.758] [bmv2] [D] [thread 1342] [18.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.758] [bmv2] [D] [thread 1342] [18.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.758] [bmv2] [D] [thread 1342] [19.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.758] [bmv2] [D] [thread 1342] [19.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.758] [bmv2] [D] [thread 1342] [19.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.758] [bmv2] [D] [thread 1342] [19.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.758] [bmv2] [D] [thread 1342] [19.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.758] [bmv2] [D] [thread 1346] [18.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:39.758] [bmv2] [D] [thread 1346] [19.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Processing packet received on port 2
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Parser 'parser': start
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.766] [bmv2] [T] [thread 1341] [20.0] [cxt 0] Bytes parsed: 14
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Parser 'parser': end
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.766] [bmv2] [T] [thread 1341] [20.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.766] [bmv2] [D] [thread 1341] [20.0] [cxt 0] Egress port is 0
+[12:31:39.766] [bmv2] [D] [thread 1342] [20.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.766] [bmv2] [D] [thread 1342] [20.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.766] [bmv2] [D] [thread 1342] [20.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.766] [bmv2] [D] [thread 1342] [20.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.766] [bmv2] [D] [thread 1342] [20.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.766] [bmv2] [D] [thread 1346] [20.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Processing packet received on port 1
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Parser 'parser': start
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.798] [bmv2] [T] [thread 1341] [21.0] [cxt 0] Bytes parsed: 14
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Parser 'parser': end
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.798] [bmv2] [T] [thread 1341] [21.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.798] [bmv2] [D] [thread 1341] [21.0] [cxt 0] Egress port is 0
+[12:31:39.798] [bmv2] [D] [thread 1342] [21.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.798] [bmv2] [D] [thread 1342] [21.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.798] [bmv2] [D] [thread 1342] [21.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.798] [bmv2] [D] [thread 1342] [21.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.798] [bmv2] [D] [thread 1342] [21.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.798] [bmv2] [D] [thread 1346] [21.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Processing packet received on port 2
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Parser 'parser': start
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.862] [bmv2] [T] [thread 1341] [22.0] [cxt 0] Bytes parsed: 14
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Parser 'parser': end
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.862] [bmv2] [T] [thread 1341] [22.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.862] [bmv2] [D] [thread 1341] [22.0] [cxt 0] Egress port is 0
+[12:31:39.862] [bmv2] [D] [thread 1342] [22.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.862] [bmv2] [D] [thread 1342] [22.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.862] [bmv2] [D] [thread 1342] [22.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.862] [bmv2] [D] [thread 1342] [22.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.862] [bmv2] [D] [thread 1342] [22.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.862] [bmv2] [D] [thread 1346] [22.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Processing packet received on port 3
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Parser 'parser': start
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.882] [bmv2] [T] [thread 1341] [23.0] [cxt 0] Bytes parsed: 14
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Parser 'parser': end
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.882] [bmv2] [T] [thread 1341] [23.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.882] [bmv2] [D] [thread 1341] [23.0] [cxt 0] Egress port is 0
+[12:31:39.882] [bmv2] [D] [thread 1342] [23.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.882] [bmv2] [D] [thread 1342] [23.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.882] [bmv2] [D] [thread 1342] [23.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.882] [bmv2] [D] [thread 1342] [23.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.882] [bmv2] [D] [thread 1342] [23.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.882] [bmv2] [D] [thread 1346] [23.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Processing packet received on port 3
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Parser 'parser': start
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.938] [bmv2] [T] [thread 1341] [24.0] [cxt 0] Bytes parsed: 14
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Parser 'parser': end
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.938] [bmv2] [T] [thread 1341] [24.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.938] [bmv2] [D] [thread 1341] [24.0] [cxt 0] Egress port is 0
+[12:31:39.938] [bmv2] [D] [thread 1342] [24.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.938] [bmv2] [D] [thread 1342] [24.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.938] [bmv2] [D] [thread 1342] [24.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.938] [bmv2] [D] [thread 1342] [24.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.938] [bmv2] [D] [thread 1342] [24.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.938] [bmv2] [D] [thread 1346] [24.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Processing packet received on port 1
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Parser 'parser': start
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.944] [bmv2] [T] [thread 1341] [25.0] [cxt 0] Bytes parsed: 14
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Parser 'parser': end
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.944] [bmv2] [T] [thread 1341] [25.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.944] [bmv2] [D] [thread 1341] [25.0] [cxt 0] Egress port is 0
+[12:31:39.944] [bmv2] [D] [thread 1342] [25.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.944] [bmv2] [D] [thread 1342] [25.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.944] [bmv2] [D] [thread 1342] [25.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.944] [bmv2] [D] [thread 1342] [25.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.944] [bmv2] [D] [thread 1342] [25.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.944] [bmv2] [D] [thread 1346] [25.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Processing packet received on port 2
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Parser 'parser': start
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.951] [bmv2] [T] [thread 1341] [26.0] [cxt 0] Bytes parsed: 14
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Parser 'parser': end
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.951] [bmv2] [T] [thread 1341] [26.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.951] [bmv2] [D] [thread 1341] [26.0] [cxt 0] Egress port is 0
+[12:31:39.951] [bmv2] [D] [thread 1342] [26.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.951] [bmv2] [D] [thread 1342] [26.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.951] [bmv2] [D] [thread 1342] [26.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.951] [bmv2] [D] [thread 1342] [26.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.951] [bmv2] [D] [thread 1342] [26.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.951] [bmv2] [D] [thread 1346] [26.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Processing packet received on port 3
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Parser 'parser': start
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Extracting header 'ethernet'
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:39.951] [bmv2] [T] [thread 1341] [27.0] [cxt 0] Bytes parsed: 14
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Parser 'parser': end
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Pipeline 'ingress': start
+[12:31:39.951] [bmv2] [T] [thread 1341] [27.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Pipeline 'ingress': end
+[12:31:39.951] [bmv2] [D] [thread 1341] [27.0] [cxt 0] Egress port is 0
+[12:31:39.951] [bmv2] [D] [thread 1342] [27.0] [cxt 0] Pipeline 'egress': start
+[12:31:39.951] [bmv2] [D] [thread 1342] [27.0] [cxt 0] Pipeline 'egress': end
+[12:31:39.951] [bmv2] [D] [thread 1342] [27.0] [cxt 0] Deparser 'deparser': start
+[12:31:39.951] [bmv2] [D] [thread 1342] [27.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:39.951] [bmv2] [D] [thread 1342] [27.0] [cxt 0] Deparser 'deparser': end
+[12:31:39.951] [bmv2] [D] [thread 1346] [27.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:40.010] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Processing packet received on port 2
+[12:31:40.010] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Parser 'parser': start
+[12:31:40.010] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.010] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.010] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.010] [bmv2] [T] [thread 1341] [28.0] [cxt 0] Bytes parsed: 14
+[12:31:40.010] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Parser 'parser': end
+[12:31:40.011] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.011] [bmv2] [T] [thread 1341] [28.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.011] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.011] [bmv2] [D] [thread 1341] [28.0] [cxt 0] Egress port is 0
+[12:31:40.011] [bmv2] [D] [thread 1342] [28.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.011] [bmv2] [D] [thread 1342] [28.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.011] [bmv2] [D] [thread 1342] [28.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.011] [bmv2] [D] [thread 1342] [28.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.011] [bmv2] [D] [thread 1342] [28.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.011] [bmv2] [D] [thread 1346] [28.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Processing packet received on port 2
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Parser 'parser': start
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.062] [bmv2] [T] [thread 1341] [29.0] [cxt 0] Bytes parsed: 14
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Parser 'parser': end
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.062] [bmv2] [T] [thread 1341] [29.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.062] [bmv2] [D] [thread 1341] [29.0] [cxt 0] Egress port is 0
+[12:31:40.062] [bmv2] [D] [thread 1342] [29.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.062] [bmv2] [D] [thread 1342] [29.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.062] [bmv2] [D] [thread 1342] [29.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.062] [bmv2] [D] [thread 1342] [29.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.062] [bmv2] [D] [thread 1342] [29.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.062] [bmv2] [D] [thread 1346] [29.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Processing packet received on port 3
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Parser 'parser': start
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.066] [bmv2] [T] [thread 1341] [30.0] [cxt 0] Bytes parsed: 14
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Parser 'parser': end
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.066] [bmv2] [T] [thread 1341] [30.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.066] [bmv2] [D] [thread 1341] [30.0] [cxt 0] Egress port is 0
+[12:31:40.066] [bmv2] [D] [thread 1342] [30.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.066] [bmv2] [D] [thread 1342] [30.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.066] [bmv2] [D] [thread 1342] [30.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.066] [bmv2] [D] [thread 1342] [30.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.066] [bmv2] [D] [thread 1342] [30.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.066] [bmv2] [D] [thread 1346] [30.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Processing packet received on port 3
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Parser 'parser': start
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.082] [bmv2] [T] [thread 1341] [31.0] [cxt 0] Bytes parsed: 14
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Parser 'parser': end
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.082] [bmv2] [T] [thread 1341] [31.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.082] [bmv2] [D] [thread 1341] [31.0] [cxt 0] Egress port is 0
+[12:31:40.082] [bmv2] [D] [thread 1342] [31.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.082] [bmv2] [D] [thread 1342] [31.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.082] [bmv2] [D] [thread 1342] [31.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.082] [bmv2] [D] [thread 1342] [31.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.082] [bmv2] [D] [thread 1342] [31.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.082] [bmv2] [D] [thread 1346] [31.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Processing packet received on port 1
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Parser 'parser': start
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.145] [bmv2] [T] [thread 1341] [32.0] [cxt 0] Bytes parsed: 14
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Parser 'parser': end
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.145] [bmv2] [T] [thread 1341] [32.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.145] [bmv2] [D] [thread 1341] [32.0] [cxt 0] Egress port is 0
+[12:31:40.145] [bmv2] [D] [thread 1342] [32.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.145] [bmv2] [D] [thread 1342] [32.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.145] [bmv2] [D] [thread 1342] [32.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.145] [bmv2] [D] [thread 1342] [32.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.145] [bmv2] [D] [thread 1342] [32.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.145] [bmv2] [D] [thread 1346] [32.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:40.201] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Processing packet received on port 2
+[12:31:40.201] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Parser 'parser': start
+[12:31:40.201] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.201] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.201] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.201] [bmv2] [T] [thread 1341] [33.0] [cxt 0] Bytes parsed: 14
+[12:31:40.201] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Parser 'parser': end
+[12:31:40.202] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.202] [bmv2] [T] [thread 1341] [33.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.202] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.202] [bmv2] [D] [thread 1341] [33.0] [cxt 0] Egress port is 0
+[12:31:40.202] [bmv2] [D] [thread 1342] [33.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.202] [bmv2] [D] [thread 1342] [33.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.202] [bmv2] [D] [thread 1342] [33.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.202] [bmv2] [D] [thread 1342] [33.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.202] [bmv2] [D] [thread 1342] [33.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.202] [bmv2] [D] [thread 1346] [33.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Processing packet received on port 3
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Parser 'parser': start
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.202] [bmv2] [T] [thread 1341] [34.0] [cxt 0] Bytes parsed: 14
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Parser 'parser': end
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.202] [bmv2] [T] [thread 1341] [34.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.202] [bmv2] [D] [thread 1341] [34.0] [cxt 0] Egress port is 0
+[12:31:40.202] [bmv2] [D] [thread 1342] [34.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.202] [bmv2] [D] [thread 1342] [34.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.202] [bmv2] [D] [thread 1342] [34.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.202] [bmv2] [D] [thread 1342] [34.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.202] [bmv2] [D] [thread 1342] [34.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.202] [bmv2] [D] [thread 1346] [34.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Processing packet received on port 3
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Parser 'parser': start
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.203] [bmv2] [T] [thread 1341] [35.0] [cxt 0] Bytes parsed: 14
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Parser 'parser': end
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.203] [bmv2] [T] [thread 1341] [35.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.203] [bmv2] [D] [thread 1341] [35.0] [cxt 0] Egress port is 0
+[12:31:40.203] [bmv2] [D] [thread 1342] [35.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.203] [bmv2] [D] [thread 1342] [35.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.203] [bmv2] [D] [thread 1342] [35.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.203] [bmv2] [D] [thread 1342] [35.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.203] [bmv2] [D] [thread 1342] [35.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.203] [bmv2] [D] [thread 1346] [35.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Processing packet received on port 1
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Parser 'parser': start
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.282] [bmv2] [T] [thread 1341] [36.0] [cxt 0] Bytes parsed: 14
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Parser 'parser': end
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.282] [bmv2] [T] [thread 1341] [36.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.282] [bmv2] [D] [thread 1341] [36.0] [cxt 0] Egress port is 0
+[12:31:40.282] [bmv2] [D] [thread 1342] [36.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.282] [bmv2] [D] [thread 1342] [36.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.282] [bmv2] [D] [thread 1342] [36.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.282] [bmv2] [D] [thread 1342] [36.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.282] [bmv2] [D] [thread 1342] [36.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.282] [bmv2] [D] [thread 1346] [36.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Processing packet received on port 2
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Parser 'parser': start
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.288] [bmv2] [T] [thread 1341] [37.0] [cxt 0] Bytes parsed: 14
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Parser 'parser': end
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.288] [bmv2] [T] [thread 1341] [37.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.288] [bmv2] [D] [thread 1341] [37.0] [cxt 0] Egress port is 0
+[12:31:40.288] [bmv2] [D] [thread 1342] [37.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.288] [bmv2] [D] [thread 1342] [37.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.288] [bmv2] [D] [thread 1342] [37.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.288] [bmv2] [D] [thread 1342] [37.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.288] [bmv2] [D] [thread 1342] [37.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.288] [bmv2] [D] [thread 1346] [37.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Processing packet received on port 3
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Parser 'parser': start
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.302] [bmv2] [T] [thread 1341] [38.0] [cxt 0] Bytes parsed: 14
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Parser 'parser': end
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.302] [bmv2] [T] [thread 1341] [38.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.302] [bmv2] [D] [thread 1341] [38.0] [cxt 0] Egress port is 0
+[12:31:40.302] [bmv2] [D] [thread 1342] [38.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.302] [bmv2] [D] [thread 1342] [38.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.302] [bmv2] [D] [thread 1342] [38.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.302] [bmv2] [D] [thread 1342] [38.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.302] [bmv2] [D] [thread 1342] [38.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.302] [bmv2] [D] [thread 1346] [38.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Processing packet received on port 2
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Parser 'parser': start
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.358] [bmv2] [T] [thread 1341] [39.0] [cxt 0] Bytes parsed: 14
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Parser 'parser': end
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.358] [bmv2] [T] [thread 1341] [39.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.358] [bmv2] [D] [thread 1341] [39.0] [cxt 0] Egress port is 0
+[12:31:40.358] [bmv2] [D] [thread 1342] [39.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.358] [bmv2] [D] [thread 1342] [39.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.358] [bmv2] [D] [thread 1342] [39.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.358] [bmv2] [D] [thread 1342] [39.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.358] [bmv2] [D] [thread 1342] [39.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.358] [bmv2] [D] [thread 1346] [39.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Processing packet received on port 3
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Parser 'parser': start
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.401] [bmv2] [T] [thread 1341] [40.0] [cxt 0] Bytes parsed: 14
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Parser 'parser': end
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.401] [bmv2] [T] [thread 1341] [40.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.401] [bmv2] [D] [thread 1341] [40.0] [cxt 0] Egress port is 0
+[12:31:40.401] [bmv2] [D] [thread 1342] [40.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.401] [bmv2] [D] [thread 1342] [40.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.401] [bmv2] [D] [thread 1342] [40.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.401] [bmv2] [D] [thread 1342] [40.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.401] [bmv2] [D] [thread 1342] [40.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.401] [bmv2] [D] [thread 1346] [40.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Processing packet received on port 2
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Parser 'parser': start
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.401] [bmv2] [T] [thread 1341] [41.0] [cxt 0] Bytes parsed: 14
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Parser 'parser': end
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.401] [bmv2] [T] [thread 1341] [41.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.401] [bmv2] [D] [thread 1341] [41.0] [cxt 0] Egress port is 0
+[12:31:40.401] [bmv2] [D] [thread 1342] [41.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.401] [bmv2] [D] [thread 1342] [41.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.401] [bmv2] [D] [thread 1342] [41.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.401] [bmv2] [D] [thread 1342] [41.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.401] [bmv2] [D] [thread 1342] [41.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.401] [bmv2] [D] [thread 1346] [41.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Processing packet received on port 2
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Parser 'parser': start
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.414] [bmv2] [T] [thread 1341] [42.0] [cxt 0] Bytes parsed: 14
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Parser 'parser': end
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.414] [bmv2] [T] [thread 1341] [42.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.414] [bmv2] [D] [thread 1341] [42.0] [cxt 0] Egress port is 0
+[12:31:40.414] [bmv2] [D] [thread 1342] [42.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.414] [bmv2] [D] [thread 1342] [42.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.414] [bmv2] [D] [thread 1342] [42.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.414] [bmv2] [D] [thread 1342] [42.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.414] [bmv2] [D] [thread 1342] [42.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.414] [bmv2] [D] [thread 1346] [42.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[12:31:40.437] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Processing packet received on port 3
+[12:31:40.437] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Parser 'parser': start
+[12:31:40.437] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.437] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.437] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.438] [bmv2] [T] [thread 1341] [43.0] [cxt 0] Bytes parsed: 14
+[12:31:40.438] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Parser 'parser': end
+[12:31:40.438] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.438] [bmv2] [T] [thread 1341] [43.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.438] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.438] [bmv2] [D] [thread 1341] [43.0] [cxt 0] Egress port is 0
+[12:31:40.438] [bmv2] [D] [thread 1342] [43.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.438] [bmv2] [D] [thread 1342] [43.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.438] [bmv2] [D] [thread 1342] [43.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.438] [bmv2] [D] [thread 1342] [43.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.438] [bmv2] [D] [thread 1342] [43.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.438] [bmv2] [D] [thread 1346] [43.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Processing packet received on port 3
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Parser 'parser': start
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.524] [bmv2] [T] [thread 1341] [44.0] [cxt 0] Bytes parsed: 14
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Parser 'parser': end
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.524] [bmv2] [T] [thread 1341] [44.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.524] [bmv2] [D] [thread 1341] [44.0] [cxt 0] Egress port is 0
+[12:31:40.524] [bmv2] [D] [thread 1342] [44.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.524] [bmv2] [D] [thread 1342] [44.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.524] [bmv2] [D] [thread 1342] [44.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.524] [bmv2] [D] [thread 1342] [44.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.524] [bmv2] [D] [thread 1342] [44.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.524] [bmv2] [D] [thread 1346] [44.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Processing packet received on port 2
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Parser 'parser': start
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.524] [bmv2] [T] [thread 1341] [45.0] [cxt 0] Bytes parsed: 14
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Parser 'parser': end
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.524] [bmv2] [T] [thread 1341] [45.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.524] [bmv2] [D] [thread 1341] [45.0] [cxt 0] Egress port is 0
+[12:31:40.524] [bmv2] [D] [thread 1342] [45.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.524] [bmv2] [D] [thread 1342] [45.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.524] [bmv2] [D] [thread 1342] [45.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.524] [bmv2] [D] [thread 1342] [45.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.524] [bmv2] [D] [thread 1342] [45.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.524] [bmv2] [D] [thread 1346] [45.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Processing packet received on port 2
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Parser 'parser': start
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.538] [bmv2] [T] [thread 1341] [46.0] [cxt 0] Bytes parsed: 14
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Parser 'parser': end
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.538] [bmv2] [T] [thread 1341] [46.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.538] [bmv2] [D] [thread 1341] [46.0] [cxt 0] Egress port is 0
+[12:31:40.538] [bmv2] [D] [thread 1342] [46.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.538] [bmv2] [D] [thread 1342] [46.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.538] [bmv2] [D] [thread 1342] [46.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.538] [bmv2] [D] [thread 1342] [46.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.538] [bmv2] [D] [thread 1342] [46.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.538] [bmv2] [D] [thread 1346] [46.0] [cxt 0] Transmitting packet of size 208 out of port 0
+New connection
+P4Runtime SetForwardingPipelineConfig
+[12:31:40.722] [bmv2] [W] [thread 1359] [P4Runtime] p4::tmp::P4DeviceConfig is deprecated
+[12:31:40.723] [bmv2] [D] [thread 1359] Set default default entry for table 'MyIngress.label_exact': MyIngress.drop - 
+Connection removed
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Processing packet received on port 2
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Parser 'parser': start
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.743] [bmv2] [T] [thread 1341] [47.0] [cxt 0] Bytes parsed: 14
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Parser 'parser': end
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.743] [bmv2] [T] [thread 1341] [47.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.743] [bmv2] [D] [thread 1341] [47.0] [cxt 0] Egress port is 0
+[12:31:40.743] [bmv2] [D] [thread 1342] [47.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.743] [bmv2] [D] [thread 1342] [47.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.743] [bmv2] [D] [thread 1342] [47.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.743] [bmv2] [D] [thread 1342] [47.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.743] [bmv2] [D] [thread 1342] [47.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.743] [bmv2] [D] [thread 1346] [47.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Processing packet received on port 2
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Parser 'parser': start
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Extracting header 'ethernet'
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:40.862] [bmv2] [T] [thread 1341] [48.0] [cxt 0] Bytes parsed: 14
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Parser 'parser': end
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Pipeline 'ingress': start
+[12:31:40.862] [bmv2] [T] [thread 1341] [48.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Pipeline 'ingress': end
+[12:31:40.862] [bmv2] [D] [thread 1341] [48.0] [cxt 0] Egress port is 0
+[12:31:40.862] [bmv2] [D] [thread 1342] [48.0] [cxt 0] Pipeline 'egress': start
+[12:31:40.862] [bmv2] [D] [thread 1342] [48.0] [cxt 0] Pipeline 'egress': end
+[12:31:40.862] [bmv2] [D] [thread 1342] [48.0] [cxt 0] Deparser 'deparser': start
+[12:31:40.862] [bmv2] [D] [thread 1342] [48.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:40.862] [bmv2] [D] [thread 1342] [48.0] [cxt 0] Deparser 'deparser': end
+[12:31:40.862] [bmv2] [D] [thread 1346] [48.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:41.307] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Processing packet received on port 3
+[12:31:41.308] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Parser 'parser': start
+[12:31:41.308] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:41.308] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Extracting header 'ethernet'
+[12:31:41.308] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:41.308] [bmv2] [T] [thread 1341] [49.0] [cxt 0] Bytes parsed: 14
+[12:31:41.308] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Parser 'parser': end
+[12:31:41.308] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Pipeline 'ingress': start
+[12:31:41.308] [bmv2] [T] [thread 1341] [49.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:41.308] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Pipeline 'ingress': end
+[12:31:41.308] [bmv2] [D] [thread 1341] [49.0] [cxt 0] Egress port is 0
+[12:31:41.308] [bmv2] [D] [thread 1342] [49.0] [cxt 0] Pipeline 'egress': start
+[12:31:41.308] [bmv2] [D] [thread 1342] [49.0] [cxt 0] Pipeline 'egress': end
+[12:31:41.308] [bmv2] [D] [thread 1342] [49.0] [cxt 0] Deparser 'deparser': start
+[12:31:41.308] [bmv2] [D] [thread 1342] [49.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:41.308] [bmv2] [D] [thread 1342] [49.0] [cxt 0] Deparser 'deparser': end
+[12:31:41.308] [bmv2] [D] [thread 1346] [49.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Processing packet received on port 1
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Parser 'parser': start
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Extracting header 'ethernet'
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:41.370] [bmv2] [T] [thread 1341] [50.0] [cxt 0] Bytes parsed: 14
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Parser 'parser': end
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Pipeline 'ingress': start
+[12:31:41.370] [bmv2] [T] [thread 1341] [50.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Pipeline 'ingress': end
+[12:31:41.370] [bmv2] [D] [thread 1341] [50.0] [cxt 0] Egress port is 0
+[12:31:41.370] [bmv2] [D] [thread 1342] [50.0] [cxt 0] Pipeline 'egress': start
+[12:31:41.370] [bmv2] [D] [thread 1342] [50.0] [cxt 0] Pipeline 'egress': end
+[12:31:41.370] [bmv2] [D] [thread 1342] [50.0] [cxt 0] Deparser 'deparser': start
+[12:31:41.370] [bmv2] [D] [thread 1342] [50.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:41.370] [bmv2] [D] [thread 1342] [50.0] [cxt 0] Deparser 'deparser': end
+[12:31:41.370] [bmv2] [D] [thread 1346] [50.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Processing packet received on port 3
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Parser 'parser': start
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Extracting header 'ethernet'
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:41.631] [bmv2] [T] [thread 1341] [51.0] [cxt 0] Bytes parsed: 14
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Parser 'parser': end
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Pipeline 'ingress': start
+[12:31:41.631] [bmv2] [T] [thread 1341] [51.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Pipeline 'ingress': end
+[12:31:41.631] [bmv2] [D] [thread 1341] [51.0] [cxt 0] Egress port is 0
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Processing packet received on port 2
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Parser 'parser': start
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Extracting header 'ethernet'
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:41.631] [bmv2] [T] [thread 1341] [52.0] [cxt 0] Bytes parsed: 14
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Parser 'parser': end
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Pipeline 'ingress': start
+[12:31:41.631] [bmv2] [T] [thread 1341] [52.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Pipeline 'ingress': end
+[12:31:41.631] [bmv2] [D] [thread 1341] [52.0] [cxt 0] Egress port is 0
+[12:31:41.631] [bmv2] [D] [thread 1342] [51.0] [cxt 0] Pipeline 'egress': start
+[12:31:41.631] [bmv2] [D] [thread 1342] [51.0] [cxt 0] Pipeline 'egress': end
+[12:31:41.631] [bmv2] [D] [thread 1342] [51.0] [cxt 0] Deparser 'deparser': start
+[12:31:41.631] [bmv2] [D] [thread 1342] [51.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:41.631] [bmv2] [D] [thread 1342] [51.0] [cxt 0] Deparser 'deparser': end
+[12:31:41.631] [bmv2] [D] [thread 1342] [52.0] [cxt 0] Pipeline 'egress': start
+[12:31:41.631] [bmv2] [D] [thread 1342] [52.0] [cxt 0] Pipeline 'egress': end
+[12:31:41.631] [bmv2] [D] [thread 1342] [52.0] [cxt 0] Deparser 'deparser': start
+[12:31:41.631] [bmv2] [D] [thread 1342] [52.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:41.631] [bmv2] [D] [thread 1342] [52.0] [cxt 0] Deparser 'deparser': end
+[12:31:41.631] [bmv2] [D] [thread 1346] [51.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:41.631] [bmv2] [D] [thread 1346] [52.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:41.964] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Processing packet received on port 2
+[12:31:41.964] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Parser 'parser': start
+[12:31:41.964] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:41.964] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Extracting header 'ethernet'
+[12:31:41.964] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:41.964] [bmv2] [T] [thread 1341] [53.0] [cxt 0] Bytes parsed: 14
+[12:31:41.964] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Parser 'parser': end
+[12:31:41.964] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Pipeline 'ingress': start
+[12:31:41.964] [bmv2] [T] [thread 1341] [53.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:41.965] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Pipeline 'ingress': end
+[12:31:41.965] [bmv2] [D] [thread 1341] [53.0] [cxt 0] Egress port is 0
+[12:31:41.965] [bmv2] [D] [thread 1342] [53.0] [cxt 0] Pipeline 'egress': start
+[12:31:41.965] [bmv2] [D] [thread 1342] [53.0] [cxt 0] Pipeline 'egress': end
+[12:31:41.965] [bmv2] [D] [thread 1342] [53.0] [cxt 0] Deparser 'deparser': start
+[12:31:41.965] [bmv2] [D] [thread 1342] [53.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:41.965] [bmv2] [D] [thread 1342] [53.0] [cxt 0] Deparser 'deparser': end
+[12:31:41.965] [bmv2] [D] [thread 1346] [53.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:42.203] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Processing packet received on port 3
+[12:31:42.203] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Parser 'parser': start
+[12:31:42.203] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:42.203] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Extracting header 'ethernet'
+[12:31:42.203] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:42.204] [bmv2] [T] [thread 1341] [54.0] [cxt 0] Bytes parsed: 14
+[12:31:42.204] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Parser 'parser': end
+[12:31:42.204] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Pipeline 'ingress': start
+[12:31:42.204] [bmv2] [T] [thread 1341] [54.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:42.204] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Pipeline 'ingress': end
+[12:31:42.204] [bmv2] [D] [thread 1341] [54.0] [cxt 0] Egress port is 0
+[12:31:42.204] [bmv2] [D] [thread 1342] [54.0] [cxt 0] Pipeline 'egress': start
+[12:31:42.204] [bmv2] [D] [thread 1342] [54.0] [cxt 0] Pipeline 'egress': end
+[12:31:42.204] [bmv2] [D] [thread 1342] [54.0] [cxt 0] Deparser 'deparser': start
+[12:31:42.204] [bmv2] [D] [thread 1342] [54.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:42.204] [bmv2] [D] [thread 1342] [54.0] [cxt 0] Deparser 'deparser': end
+[12:31:42.204] [bmv2] [D] [thread 1346] [54.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Processing packet received on port 1
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Parser 'parser': start
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Extracting header 'ethernet'
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:42.294] [bmv2] [T] [thread 1341] [55.0] [cxt 0] Bytes parsed: 14
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Parser 'parser': end
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Pipeline 'ingress': start
+[12:31:42.294] [bmv2] [T] [thread 1341] [55.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Pipeline 'ingress': end
+[12:31:42.294] [bmv2] [D] [thread 1341] [55.0] [cxt 0] Egress port is 0
+[12:31:42.294] [bmv2] [D] [thread 1342] [55.0] [cxt 0] Pipeline 'egress': start
+[12:31:42.295] [bmv2] [D] [thread 1342] [55.0] [cxt 0] Pipeline 'egress': end
+[12:31:42.295] [bmv2] [D] [thread 1342] [55.0] [cxt 0] Deparser 'deparser': start
+[12:31:42.295] [bmv2] [D] [thread 1342] [55.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:42.295] [bmv2] [D] [thread 1342] [55.0] [cxt 0] Deparser 'deparser': end
+[12:31:42.295] [bmv2] [D] [thread 1346] [55.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Processing packet received on port 2
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Parser 'parser': start
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Extracting header 'ethernet'
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:42.535] [bmv2] [T] [thread 1341] [56.0] [cxt 0] Bytes parsed: 14
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Parser 'parser': end
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Pipeline 'ingress': start
+[12:31:42.535] [bmv2] [T] [thread 1341] [56.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Pipeline 'ingress': end
+[12:31:42.535] [bmv2] [D] [thread 1341] [56.0] [cxt 0] Egress port is 0
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Processing packet received on port 3
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Parser 'parser': start
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Extracting header 'ethernet'
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:42.535] [bmv2] [T] [thread 1341] [57.0] [cxt 0] Bytes parsed: 14
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Parser 'parser': end
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Pipeline 'ingress': start
+[12:31:42.535] [bmv2] [T] [thread 1341] [57.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Pipeline 'ingress': end
+[12:31:42.535] [bmv2] [D] [thread 1341] [57.0] [cxt 0] Egress port is 0
+[12:31:42.535] [bmv2] [D] [thread 1342] [56.0] [cxt 0] Pipeline 'egress': start
+[12:31:42.535] [bmv2] [D] [thread 1342] [56.0] [cxt 0] Pipeline 'egress': end
+[12:31:42.535] [bmv2] [D] [thread 1342] [56.0] [cxt 0] Deparser 'deparser': start
+[12:31:42.535] [bmv2] [D] [thread 1342] [56.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:42.535] [bmv2] [D] [thread 1342] [56.0] [cxt 0] Deparser 'deparser': end
+[12:31:42.535] [bmv2] [D] [thread 1342] [57.0] [cxt 0] Pipeline 'egress': start
+[12:31:42.535] [bmv2] [D] [thread 1342] [57.0] [cxt 0] Pipeline 'egress': end
+[12:31:42.535] [bmv2] [D] [thread 1342] [57.0] [cxt 0] Deparser 'deparser': start
+[12:31:42.535] [bmv2] [D] [thread 1342] [57.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:42.535] [bmv2] [D] [thread 1342] [57.0] [cxt 0] Deparser 'deparser': end
+[12:31:42.535] [bmv2] [D] [thread 1346] [56.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:42.535] [bmv2] [D] [thread 1346] [57.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Processing packet received on port 2
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Parser 'parser': start
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Extracting header 'ethernet'
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:42.861] [bmv2] [T] [thread 1341] [58.0] [cxt 0] Bytes parsed: 14
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Parser 'parser': end
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Pipeline 'ingress': start
+[12:31:42.861] [bmv2] [T] [thread 1341] [58.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Pipeline 'ingress': end
+[12:31:42.861] [bmv2] [D] [thread 1341] [58.0] [cxt 0] Egress port is 0
+[12:31:42.861] [bmv2] [D] [thread 1342] [58.0] [cxt 0] Pipeline 'egress': start
+[12:31:42.861] [bmv2] [D] [thread 1342] [58.0] [cxt 0] Pipeline 'egress': end
+[12:31:42.861] [bmv2] [D] [thread 1342] [58.0] [cxt 0] Deparser 'deparser': start
+[12:31:42.861] [bmv2] [D] [thread 1342] [58.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:42.861] [bmv2] [D] [thread 1342] [58.0] [cxt 0] Deparser 'deparser': end
+[12:31:42.861] [bmv2] [D] [thread 1346] [58.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Processing packet received on port 3
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Parser 'parser': start
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.106] [bmv2] [T] [thread 1341] [59.0] [cxt 0] Bytes parsed: 14
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Parser 'parser': end
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.106] [bmv2] [T] [thread 1341] [59.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.106] [bmv2] [D] [thread 1341] [59.0] [cxt 0] Egress port is 0
+[12:31:43.106] [bmv2] [D] [thread 1342] [59.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.106] [bmv2] [D] [thread 1342] [59.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.106] [bmv2] [D] [thread 1342] [59.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.106] [bmv2] [D] [thread 1342] [59.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.106] [bmv2] [D] [thread 1342] [59.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.106] [bmv2] [D] [thread 1346] [59.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:43.173] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Processing packet received on port 1
+[12:31:43.173] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Parser 'parser': start
+[12:31:43.173] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.173] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.174] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.174] [bmv2] [T] [thread 1341] [60.0] [cxt 0] Bytes parsed: 14
+[12:31:43.174] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Parser 'parser': end
+[12:31:43.174] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.174] [bmv2] [T] [thread 1341] [60.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.174] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.174] [bmv2] [D] [thread 1341] [60.0] [cxt 0] Egress port is 0
+[12:31:43.174] [bmv2] [D] [thread 1342] [60.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.174] [bmv2] [D] [thread 1342] [60.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.174] [bmv2] [D] [thread 1342] [60.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.174] [bmv2] [D] [thread 1342] [60.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.174] [bmv2] [D] [thread 1342] [60.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.174] [bmv2] [D] [thread 1346] [60.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Processing packet received on port 2
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Parser 'parser': start
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.430] [bmv2] [T] [thread 1341] [61.0] [cxt 0] Bytes parsed: 14
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Parser 'parser': end
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.430] [bmv2] [T] [thread 1341] [61.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.430] [bmv2] [D] [thread 1341] [61.0] [cxt 0] Egress port is 0
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Processing packet received on port 3
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Parser 'parser': start
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.430] [bmv2] [T] [thread 1341] [62.0] [cxt 0] Bytes parsed: 14
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Parser 'parser': end
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.430] [bmv2] [T] [thread 1341] [62.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.430] [bmv2] [D] [thread 1341] [62.0] [cxt 0] Egress port is 0
+[12:31:43.430] [bmv2] [D] [thread 1342] [61.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.430] [bmv2] [D] [thread 1342] [61.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.430] [bmv2] [D] [thread 1342] [61.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.430] [bmv2] [D] [thread 1342] [61.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.430] [bmv2] [D] [thread 1342] [61.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.430] [bmv2] [D] [thread 1342] [62.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.430] [bmv2] [D] [thread 1342] [62.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.430] [bmv2] [D] [thread 1342] [62.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.430] [bmv2] [D] [thread 1342] [62.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.430] [bmv2] [D] [thread 1342] [62.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.430] [bmv2] [D] [thread 1346] [61.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:43.430] [bmv2] [D] [thread 1346] [62.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Processing packet received on port 3
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Parser 'parser': start
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.534] [bmv2] [T] [thread 1341] [63.0] [cxt 0] Bytes parsed: 14
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Parser 'parser': end
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.534] [bmv2] [T] [thread 1341] [63.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.534] [bmv2] [D] [thread 1341] [63.0] [cxt 0] Egress port is 0
+[12:31:43.534] [bmv2] [D] [thread 1342] [63.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.534] [bmv2] [D] [thread 1342] [63.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.534] [bmv2] [D] [thread 1342] [63.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.534] [bmv2] [D] [thread 1342] [63.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.534] [bmv2] [D] [thread 1342] [63.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.534] [bmv2] [D] [thread 1346] [63.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:43.595] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Processing packet received on port 1
+[12:31:43.596] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Parser 'parser': start
+[12:31:43.596] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.596] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.596] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.596] [bmv2] [T] [thread 1341] [64.0] [cxt 0] Bytes parsed: 14
+[12:31:43.596] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Parser 'parser': end
+[12:31:43.596] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.596] [bmv2] [T] [thread 1341] [64.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.596] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.596] [bmv2] [D] [thread 1341] [64.0] [cxt 0] Egress port is 0
+[12:31:43.596] [bmv2] [D] [thread 1342] [64.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.596] [bmv2] [D] [thread 1342] [64.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.596] [bmv2] [D] [thread 1342] [64.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.596] [bmv2] [D] [thread 1342] [64.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.596] [bmv2] [D] [thread 1342] [64.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.596] [bmv2] [D] [thread 1346] [64.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Processing packet received on port 2
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Parser 'parser': start
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.768] [bmv2] [T] [thread 1341] [65.0] [cxt 0] Bytes parsed: 14
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Parser 'parser': end
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.768] [bmv2] [T] [thread 1341] [65.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.768] [bmv2] [D] [thread 1341] [65.0] [cxt 0] Egress port is 0
+[12:31:43.768] [bmv2] [D] [thread 1342] [65.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.768] [bmv2] [D] [thread 1342] [65.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.768] [bmv2] [D] [thread 1342] [65.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.768] [bmv2] [D] [thread 1342] [65.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.768] [bmv2] [D] [thread 1342] [65.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.768] [bmv2] [D] [thread 1346] [65.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Processing packet received on port 2
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Parser 'parser': start
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.861] [bmv2] [T] [thread 1341] [66.0] [cxt 0] Bytes parsed: 14
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Parser 'parser': end
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.861] [bmv2] [T] [thread 1341] [66.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.861] [bmv2] [D] [thread 1341] [66.0] [cxt 0] Egress port is 0
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Processing packet received on port 3
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Parser 'parser': start
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Extracting header 'ethernet'
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:43.861] [bmv2] [T] [thread 1341] [67.0] [cxt 0] Bytes parsed: 14
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Parser 'parser': end
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Pipeline 'ingress': start
+[12:31:43.861] [bmv2] [T] [thread 1341] [67.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Pipeline 'ingress': end
+[12:31:43.861] [bmv2] [D] [thread 1341] [67.0] [cxt 0] Egress port is 0
+[12:31:43.861] [bmv2] [D] [thread 1342] [66.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.861] [bmv2] [D] [thread 1342] [66.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.861] [bmv2] [D] [thread 1342] [66.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.861] [bmv2] [D] [thread 1342] [66.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.861] [bmv2] [D] [thread 1342] [66.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.861] [bmv2] [D] [thread 1342] [67.0] [cxt 0] Pipeline 'egress': start
+[12:31:43.861] [bmv2] [D] [thread 1342] [67.0] [cxt 0] Pipeline 'egress': end
+[12:31:43.861] [bmv2] [D] [thread 1342] [67.0] [cxt 0] Deparser 'deparser': start
+[12:31:43.861] [bmv2] [D] [thread 1342] [67.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:43.861] [bmv2] [D] [thread 1342] [67.0] [cxt 0] Deparser 'deparser': end
+[12:31:43.861] [bmv2] [D] [thread 1346] [66.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:43.861] [bmv2] [D] [thread 1346] [67.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:44.190] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Processing packet received on port 2
+[12:31:44.190] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Parser 'parser': start
+[12:31:44.190] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:44.190] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Extracting header 'ethernet'
+[12:31:44.190] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:44.190] [bmv2] [T] [thread 1341] [68.0] [cxt 0] Bytes parsed: 14
+[12:31:44.190] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Parser 'parser': end
+[12:31:44.191] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Pipeline 'ingress': start
+[12:31:44.191] [bmv2] [T] [thread 1341] [68.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:44.191] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Pipeline 'ingress': end
+[12:31:44.191] [bmv2] [D] [thread 1341] [68.0] [cxt 0] Egress port is 0
+[12:31:44.191] [bmv2] [D] [thread 1342] [68.0] [cxt 0] Pipeline 'egress': start
+[12:31:44.191] [bmv2] [D] [thread 1342] [68.0] [cxt 0] Pipeline 'egress': end
+[12:31:44.191] [bmv2] [D] [thread 1342] [68.0] [cxt 0] Deparser 'deparser': start
+[12:31:44.191] [bmv2] [D] [thread 1342] [68.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:44.191] [bmv2] [D] [thread 1342] [68.0] [cxt 0] Deparser 'deparser': end
+[12:31:44.191] [bmv2] [D] [thread 1346] [68.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Processing packet received on port 3
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Parser 'parser': start
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Extracting header 'ethernet'
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:46.205] [bmv2] [T] [thread 1341] [69.0] [cxt 0] Bytes parsed: 14
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Parser 'parser': end
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Pipeline 'ingress': start
+[12:31:46.205] [bmv2] [T] [thread 1341] [69.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Pipeline 'ingress': end
+[12:31:46.205] [bmv2] [D] [thread 1341] [69.0] [cxt 0] Egress port is 0
+[12:31:46.205] [bmv2] [D] [thread 1342] [69.0] [cxt 0] Pipeline 'egress': start
+[12:31:46.205] [bmv2] [D] [thread 1342] [69.0] [cxt 0] Pipeline 'egress': end
+[12:31:46.205] [bmv2] [D] [thread 1342] [69.0] [cxt 0] Deparser 'deparser': start
+[12:31:46.205] [bmv2] [D] [thread 1342] [69.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:46.205] [bmv2] [D] [thread 1342] [69.0] [cxt 0] Deparser 'deparser': end
+[12:31:46.205] [bmv2] [D] [thread 1346] [69.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Processing packet received on port 1
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Parser 'parser': start
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Extracting header 'ethernet'
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:46.283] [bmv2] [T] [thread 1341] [70.0] [cxt 0] Bytes parsed: 14
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Parser 'parser': end
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Pipeline 'ingress': start
+[12:31:46.283] [bmv2] [T] [thread 1341] [70.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Pipeline 'ingress': end
+[12:31:46.283] [bmv2] [D] [thread 1341] [70.0] [cxt 0] Egress port is 0
+[12:31:46.283] [bmv2] [D] [thread 1342] [70.0] [cxt 0] Pipeline 'egress': start
+[12:31:46.283] [bmv2] [D] [thread 1342] [70.0] [cxt 0] Pipeline 'egress': end
+[12:31:46.283] [bmv2] [D] [thread 1342] [70.0] [cxt 0] Deparser 'deparser': start
+[12:31:46.283] [bmv2] [D] [thread 1342] [70.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:46.283] [bmv2] [D] [thread 1342] [70.0] [cxt 0] Deparser 'deparser': end
+[12:31:46.283] [bmv2] [D] [thread 1346] [70.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Processing packet received on port 2
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Parser 'parser': start
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Extracting header 'ethernet'
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:46.532] [bmv2] [T] [thread 1341] [71.0] [cxt 0] Bytes parsed: 14
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Parser 'parser': end
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Pipeline 'ingress': start
+[12:31:46.532] [bmv2] [T] [thread 1341] [71.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Pipeline 'ingress': end
+[12:31:46.532] [bmv2] [D] [thread 1341] [71.0] [cxt 0] Egress port is 0
+[12:31:46.532] [bmv2] [D] [thread 1342] [71.0] [cxt 0] Pipeline 'egress': start
+[12:31:46.532] [bmv2] [D] [thread 1342] [71.0] [cxt 0] Pipeline 'egress': end
+[12:31:46.532] [bmv2] [D] [thread 1342] [71.0] [cxt 0] Deparser 'deparser': start
+[12:31:46.532] [bmv2] [D] [thread 1342] [71.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:46.532] [bmv2] [D] [thread 1342] [71.0] [cxt 0] Deparser 'deparser': end
+[12:31:46.532] [bmv2] [D] [thread 1346] [71.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Processing packet received on port 3
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Parser 'parser': start
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Extracting header 'ethernet'
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:46.532] [bmv2] [T] [thread 1341] [72.0] [cxt 0] Bytes parsed: 14
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Parser 'parser': end
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Pipeline 'ingress': start
+[12:31:46.532] [bmv2] [T] [thread 1341] [72.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Pipeline 'ingress': end
+[12:31:46.532] [bmv2] [D] [thread 1341] [72.0] [cxt 0] Egress port is 0
+[12:31:46.533] [bmv2] [D] [thread 1342] [72.0] [cxt 0] Pipeline 'egress': start
+[12:31:46.533] [bmv2] [D] [thread 1342] [72.0] [cxt 0] Pipeline 'egress': end
+[12:31:46.533] [bmv2] [D] [thread 1342] [72.0] [cxt 0] Deparser 'deparser': start
+[12:31:46.533] [bmv2] [D] [thread 1342] [72.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:46.533] [bmv2] [D] [thread 1342] [72.0] [cxt 0] Deparser 'deparser': end
+[12:31:46.533] [bmv2] [D] [thread 1346] [72.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Processing packet received on port 2
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Parser 'parser': start
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Extracting header 'ethernet'
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:46.864] [bmv2] [T] [thread 1341] [73.0] [cxt 0] Bytes parsed: 14
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Parser 'parser': end
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Pipeline 'ingress': start
+[12:31:46.864] [bmv2] [T] [thread 1341] [73.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Pipeline 'ingress': end
+[12:31:46.864] [bmv2] [D] [thread 1341] [73.0] [cxt 0] Egress port is 0
+[12:31:46.864] [bmv2] [D] [thread 1342] [73.0] [cxt 0] Pipeline 'egress': start
+[12:31:46.864] [bmv2] [D] [thread 1342] [73.0] [cxt 0] Pipeline 'egress': end
+[12:31:46.864] [bmv2] [D] [thread 1342] [73.0] [cxt 0] Deparser 'deparser': start
+[12:31:46.864] [bmv2] [D] [thread 1342] [73.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:46.864] [bmv2] [D] [thread 1342] [73.0] [cxt 0] Deparser 'deparser': end
+[12:31:46.864] [bmv2] [D] [thread 1346] [73.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Processing packet received on port 3
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Parser 'parser': start
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Extracting header 'ethernet'
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:47.119] [bmv2] [T] [thread 1341] [74.0] [cxt 0] Bytes parsed: 14
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Parser 'parser': end
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Pipeline 'ingress': start
+[12:31:47.119] [bmv2] [T] [thread 1341] [74.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Pipeline 'ingress': end
+[12:31:47.119] [bmv2] [D] [thread 1341] [74.0] [cxt 0] Egress port is 0
+[12:31:47.119] [bmv2] [D] [thread 1342] [74.0] [cxt 0] Pipeline 'egress': start
+[12:31:47.119] [bmv2] [D] [thread 1342] [74.0] [cxt 0] Pipeline 'egress': end
+[12:31:47.119] [bmv2] [D] [thread 1342] [74.0] [cxt 0] Deparser 'deparser': start
+[12:31:47.119] [bmv2] [D] [thread 1342] [74.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:47.119] [bmv2] [D] [thread 1342] [74.0] [cxt 0] Deparser 'deparser': end
+[12:31:47.119] [bmv2] [D] [thread 1346] [74.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Processing packet received on port 1
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Parser 'parser': start
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Extracting header 'ethernet'
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:47.197] [bmv2] [T] [thread 1341] [75.0] [cxt 0] Bytes parsed: 14
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Parser 'parser': end
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Pipeline 'ingress': start
+[12:31:47.197] [bmv2] [T] [thread 1341] [75.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Pipeline 'ingress': end
+[12:31:47.197] [bmv2] [D] [thread 1341] [75.0] [cxt 0] Egress port is 0
+[12:31:47.197] [bmv2] [D] [thread 1342] [75.0] [cxt 0] Pipeline 'egress': start
+[12:31:47.198] [bmv2] [D] [thread 1342] [75.0] [cxt 0] Pipeline 'egress': end
+[12:31:47.198] [bmv2] [D] [thread 1342] [75.0] [cxt 0] Deparser 'deparser': start
+[12:31:47.198] [bmv2] [D] [thread 1342] [75.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:47.198] [bmv2] [D] [thread 1342] [75.0] [cxt 0] Deparser 'deparser': end
+[12:31:47.198] [bmv2] [D] [thread 1346] [75.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Processing packet received on port 2
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Parser 'parser': start
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Extracting header 'ethernet'
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:47.479] [bmv2] [T] [thread 1341] [76.0] [cxt 0] Bytes parsed: 14
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Parser 'parser': end
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Pipeline 'ingress': start
+[12:31:47.479] [bmv2] [T] [thread 1341] [76.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Pipeline 'ingress': end
+[12:31:47.479] [bmv2] [D] [thread 1341] [76.0] [cxt 0] Egress port is 0
+[12:31:47.479] [bmv2] [D] [thread 1342] [76.0] [cxt 0] Pipeline 'egress': start
+[12:31:47.479] [bmv2] [D] [thread 1342] [76.0] [cxt 0] Pipeline 'egress': end
+[12:31:47.479] [bmv2] [D] [thread 1342] [76.0] [cxt 0] Deparser 'deparser': start
+[12:31:47.479] [bmv2] [D] [thread 1342] [76.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:47.479] [bmv2] [D] [thread 1342] [76.0] [cxt 0] Deparser 'deparser': end
+[12:31:47.479] [bmv2] [D] [thread 1346] [76.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Processing packet received on port 3
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Parser 'parser': start
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Extracting header 'ethernet'
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:47.479] [bmv2] [T] [thread 1341] [77.0] [cxt 0] Bytes parsed: 14
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Parser 'parser': end
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Pipeline 'ingress': start
+[12:31:47.479] [bmv2] [T] [thread 1341] [77.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Pipeline 'ingress': end
+[12:31:47.479] [bmv2] [D] [thread 1341] [77.0] [cxt 0] Egress port is 0
+[12:31:47.479] [bmv2] [D] [thread 1342] [77.0] [cxt 0] Pipeline 'egress': start
+[12:31:47.479] [bmv2] [D] [thread 1342] [77.0] [cxt 0] Pipeline 'egress': end
+[12:31:47.479] [bmv2] [D] [thread 1342] [77.0] [cxt 0] Deparser 'deparser': start
+[12:31:47.479] [bmv2] [D] [thread 1342] [77.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:47.479] [bmv2] [D] [thread 1342] [77.0] [cxt 0] Deparser 'deparser': end
+[12:31:47.479] [bmv2] [D] [thread 1346] [77.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Processing packet received on port 2
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Parser 'parser': start
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Extracting header 'ethernet'
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:47.777] [bmv2] [T] [thread 1341] [78.0] [cxt 0] Bytes parsed: 14
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Parser 'parser': end
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Pipeline 'ingress': start
+[12:31:47.777] [bmv2] [T] [thread 1341] [78.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Pipeline 'ingress': end
+[12:31:47.777] [bmv2] [D] [thread 1341] [78.0] [cxt 0] Egress port is 0
+[12:31:47.778] [bmv2] [D] [thread 1342] [78.0] [cxt 0] Pipeline 'egress': start
+[12:31:47.778] [bmv2] [D] [thread 1342] [78.0] [cxt 0] Pipeline 'egress': end
+[12:31:47.778] [bmv2] [D] [thread 1342] [78.0] [cxt 0] Deparser 'deparser': start
+[12:31:47.778] [bmv2] [D] [thread 1342] [78.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:47.778] [bmv2] [D] [thread 1342] [78.0] [cxt 0] Deparser 'deparser': end
+[12:31:47.778] [bmv2] [D] [thread 1346] [78.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Processing packet received on port 3
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Parser 'parser': start
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Extracting header 'ethernet'
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:54.232] [bmv2] [T] [thread 1341] [79.0] [cxt 0] Bytes parsed: 14
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Parser 'parser': end
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Pipeline 'ingress': start
+[12:31:54.232] [bmv2] [T] [thread 1341] [79.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Pipeline 'ingress': end
+[12:31:54.232] [bmv2] [D] [thread 1341] [79.0] [cxt 0] Egress port is 0
+[12:31:54.232] [bmv2] [D] [thread 1342] [79.0] [cxt 0] Pipeline 'egress': start
+[12:31:54.232] [bmv2] [D] [thread 1342] [79.0] [cxt 0] Pipeline 'egress': end
+[12:31:54.232] [bmv2] [D] [thread 1342] [79.0] [cxt 0] Deparser 'deparser': start
+[12:31:54.232] [bmv2] [D] [thread 1342] [79.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:54.232] [bmv2] [D] [thread 1342] [79.0] [cxt 0] Deparser 'deparser': end
+[12:31:54.232] [bmv2] [D] [thread 1346] [79.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:54.293] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Processing packet received on port 1
+[12:31:54.293] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Parser 'parser': start
+[12:31:54.294] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:54.294] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Extracting header 'ethernet'
+[12:31:54.294] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:54.294] [bmv2] [T] [thread 1341] [80.0] [cxt 0] Bytes parsed: 14
+[12:31:54.294] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Parser 'parser': end
+[12:31:54.294] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Pipeline 'ingress': start
+[12:31:54.294] [bmv2] [T] [thread 1341] [80.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:54.294] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Pipeline 'ingress': end
+[12:31:54.294] [bmv2] [D] [thread 1341] [80.0] [cxt 0] Egress port is 0
+[12:31:54.294] [bmv2] [D] [thread 1342] [80.0] [cxt 0] Pipeline 'egress': start
+[12:31:54.294] [bmv2] [D] [thread 1342] [80.0] [cxt 0] Pipeline 'egress': end
+[12:31:54.294] [bmv2] [D] [thread 1342] [80.0] [cxt 0] Deparser 'deparser': start
+[12:31:54.294] [bmv2] [D] [thread 1342] [80.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:54.294] [bmv2] [D] [thread 1342] [80.0] [cxt 0] Deparser 'deparser': end
+[12:31:54.294] [bmv2] [D] [thread 1346] [80.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Processing packet received on port 2
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Parser 'parser': start
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Extracting header 'ethernet'
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:54.547] [bmv2] [T] [thread 1341] [81.0] [cxt 0] Bytes parsed: 14
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Parser 'parser': end
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Pipeline 'ingress': start
+[12:31:54.547] [bmv2] [T] [thread 1341] [81.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Pipeline 'ingress': end
+[12:31:54.547] [bmv2] [D] [thread 1341] [81.0] [cxt 0] Egress port is 0
+[12:31:54.547] [bmv2] [D] [thread 1342] [81.0] [cxt 0] Pipeline 'egress': start
+[12:31:54.547] [bmv2] [D] [thread 1342] [81.0] [cxt 0] Pipeline 'egress': end
+[12:31:54.547] [bmv2] [D] [thread 1342] [81.0] [cxt 0] Deparser 'deparser': start
+[12:31:54.547] [bmv2] [D] [thread 1342] [81.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:54.547] [bmv2] [D] [thread 1342] [81.0] [cxt 0] Deparser 'deparser': end
+[12:31:54.547] [bmv2] [D] [thread 1346] [81.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:54.547] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Processing packet received on port 3
+[12:31:54.547] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Parser 'parser': start
+[12:31:54.547] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:54.547] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Extracting header 'ethernet'
+[12:31:54.547] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:54.547] [bmv2] [T] [thread 1341] [82.0] [cxt 0] Bytes parsed: 14
+[12:31:54.547] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Parser 'parser': end
+[12:31:54.547] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Pipeline 'ingress': start
+[12:31:54.547] [bmv2] [T] [thread 1341] [82.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:54.547] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Pipeline 'ingress': end
+[12:31:54.548] [bmv2] [D] [thread 1341] [82.0] [cxt 0] Egress port is 0
+[12:31:54.548] [bmv2] [D] [thread 1342] [82.0] [cxt 0] Pipeline 'egress': start
+[12:31:54.548] [bmv2] [D] [thread 1342] [82.0] [cxt 0] Pipeline 'egress': end
+[12:31:54.548] [bmv2] [D] [thread 1342] [82.0] [cxt 0] Deparser 'deparser': start
+[12:31:54.548] [bmv2] [D] [thread 1342] [82.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:54.548] [bmv2] [D] [thread 1342] [82.0] [cxt 0] Deparser 'deparser': end
+[12:31:54.548] [bmv2] [D] [thread 1346] [82.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:31:54.900] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Processing packet received on port 2
+[12:31:54.900] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Parser 'parser': start
+[12:31:54.900] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:31:54.900] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Extracting header 'ethernet'
+[12:31:54.901] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Parser state 'start': key is 86dd
+[12:31:54.901] [bmv2] [T] [thread 1341] [83.0] [cxt 0] Bytes parsed: 14
+[12:31:54.901] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Parser 'parser': end
+[12:31:54.901] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Pipeline 'ingress': start
+[12:31:54.901] [bmv2] [T] [thread 1341] [83.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:31:54.901] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Pipeline 'ingress': end
+[12:31:54.901] [bmv2] [D] [thread 1341] [83.0] [cxt 0] Egress port is 0
+[12:31:54.901] [bmv2] [D] [thread 1342] [83.0] [cxt 0] Pipeline 'egress': start
+[12:31:54.901] [bmv2] [D] [thread 1342] [83.0] [cxt 0] Pipeline 'egress': end
+[12:31:54.901] [bmv2] [D] [thread 1342] [83.0] [cxt 0] Deparser 'deparser': start
+[12:31:54.901] [bmv2] [D] [thread 1342] [83.0] [cxt 0] Deparsing header 'ethernet'
+[12:31:54.901] [bmv2] [D] [thread 1342] [83.0] [cxt 0] Deparser 'deparser': end
+[12:31:54.901] [bmv2] [D] [thread 1346] [83.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Processing packet received on port 3
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Parser 'parser': start
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Extracting header 'ethernet'
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:10.260] [bmv2] [T] [thread 1341] [84.0] [cxt 0] Bytes parsed: 14
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Parser 'parser': end
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Pipeline 'ingress': start
+[12:32:10.260] [bmv2] [T] [thread 1341] [84.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Pipeline 'ingress': end
+[12:32:10.260] [bmv2] [D] [thread 1341] [84.0] [cxt 0] Egress port is 0
+[12:32:10.260] [bmv2] [D] [thread 1342] [84.0] [cxt 0] Pipeline 'egress': start
+[12:32:10.260] [bmv2] [D] [thread 1342] [84.0] [cxt 0] Pipeline 'egress': end
+[12:32:10.260] [bmv2] [D] [thread 1342] [84.0] [cxt 0] Deparser 'deparser': start
+[12:32:10.260] [bmv2] [D] [thread 1342] [84.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:10.260] [bmv2] [D] [thread 1342] [84.0] [cxt 0] Deparser 'deparser': end
+[12:32:10.260] [bmv2] [D] [thread 1346] [84.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Processing packet received on port 1
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Parser 'parser': start
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Extracting header 'ethernet'
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:10.286] [bmv2] [T] [thread 1341] [85.0] [cxt 0] Bytes parsed: 14
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Parser 'parser': end
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Pipeline 'ingress': start
+[12:32:10.286] [bmv2] [T] [thread 1341] [85.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Pipeline 'ingress': end
+[12:32:10.286] [bmv2] [D] [thread 1341] [85.0] [cxt 0] Egress port is 0
+[12:32:10.286] [bmv2] [D] [thread 1342] [85.0] [cxt 0] Pipeline 'egress': start
+[12:32:10.286] [bmv2] [D] [thread 1342] [85.0] [cxt 0] Pipeline 'egress': end
+[12:32:10.286] [bmv2] [D] [thread 1342] [85.0] [cxt 0] Deparser 'deparser': start
+[12:32:10.286] [bmv2] [D] [thread 1342] [85.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:10.286] [bmv2] [D] [thread 1342] [85.0] [cxt 0] Deparser 'deparser': end
+[12:32:10.286] [bmv2] [D] [thread 1346] [85.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Processing packet received on port 2
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Parser 'parser': start
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Extracting header 'ethernet'
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:10.531] [bmv2] [T] [thread 1341] [86.0] [cxt 0] Bytes parsed: 14
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Parser 'parser': end
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Pipeline 'ingress': start
+[12:32:10.531] [bmv2] [T] [thread 1341] [86.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Pipeline 'ingress': end
+[12:32:10.531] [bmv2] [D] [thread 1341] [86.0] [cxt 0] Egress port is 0
+[12:32:10.532] [bmv2] [D] [thread 1342] [86.0] [cxt 0] Pipeline 'egress': start
+[12:32:10.532] [bmv2] [D] [thread 1342] [86.0] [cxt 0] Pipeline 'egress': end
+[12:32:10.532] [bmv2] [D] [thread 1342] [86.0] [cxt 0] Deparser 'deparser': start
+[12:32:10.532] [bmv2] [D] [thread 1342] [86.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:10.532] [bmv2] [D] [thread 1342] [86.0] [cxt 0] Deparser 'deparser': end
+[12:32:10.532] [bmv2] [D] [thread 1346] [86.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Processing packet received on port 3
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Parser 'parser': start
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Extracting header 'ethernet'
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:10.532] [bmv2] [T] [thread 1341] [87.0] [cxt 0] Bytes parsed: 14
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Parser 'parser': end
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Pipeline 'ingress': start
+[12:32:10.532] [bmv2] [T] [thread 1341] [87.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Pipeline 'ingress': end
+[12:32:10.532] [bmv2] [D] [thread 1341] [87.0] [cxt 0] Egress port is 0
+[12:32:10.532] [bmv2] [D] [thread 1342] [87.0] [cxt 0] Pipeline 'egress': start
+[12:32:10.532] [bmv2] [D] [thread 1342] [87.0] [cxt 0] Pipeline 'egress': end
+[12:32:10.532] [bmv2] [D] [thread 1342] [87.0] [cxt 0] Deparser 'deparser': start
+[12:32:10.532] [bmv2] [D] [thread 1342] [87.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:10.532] [bmv2] [D] [thread 1342] [87.0] [cxt 0] Deparser 'deparser': end
+[12:32:10.532] [bmv2] [D] [thread 1346] [87.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Processing packet received on port 2
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Parser 'parser': start
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Extracting header 'ethernet'
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:10.867] [bmv2] [T] [thread 1341] [88.0] [cxt 0] Bytes parsed: 14
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Parser 'parser': end
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Pipeline 'ingress': start
+[12:32:10.867] [bmv2] [T] [thread 1341] [88.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Pipeline 'ingress': end
+[12:32:10.867] [bmv2] [D] [thread 1341] [88.0] [cxt 0] Egress port is 0
+[12:32:10.867] [bmv2] [D] [thread 1342] [88.0] [cxt 0] Pipeline 'egress': start
+[12:32:10.867] [bmv2] [D] [thread 1342] [88.0] [cxt 0] Pipeline 'egress': end
+[12:32:10.867] [bmv2] [D] [thread 1342] [88.0] [cxt 0] Deparser 'deparser': start
+[12:32:10.867] [bmv2] [D] [thread 1342] [88.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:10.867] [bmv2] [D] [thread 1342] [88.0] [cxt 0] Deparser 'deparser': end
+[12:32:10.867] [bmv2] [D] [thread 1346] [88.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:42.260] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Processing packet received on port 3
+[12:32:42.260] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Parser 'parser': start
+[12:32:42.260] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:42.260] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Extracting header 'ethernet'
+[12:32:42.260] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:42.260] [bmv2] [T] [thread 1341] [89.0] [cxt 0] Bytes parsed: 14
+[12:32:42.260] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Parser 'parser': end
+[12:32:42.260] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Pipeline 'ingress': start
+[12:32:42.260] [bmv2] [T] [thread 1341] [89.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:42.261] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Pipeline 'ingress': end
+[12:32:42.261] [bmv2] [D] [thread 1341] [89.0] [cxt 0] Egress port is 0
+[12:32:42.261] [bmv2] [D] [thread 1342] [89.0] [cxt 0] Pipeline 'egress': start
+[12:32:42.261] [bmv2] [D] [thread 1342] [89.0] [cxt 0] Pipeline 'egress': end
+[12:32:42.261] [bmv2] [D] [thread 1342] [89.0] [cxt 0] Deparser 'deparser': start
+[12:32:42.261] [bmv2] [D] [thread 1342] [89.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:42.261] [bmv2] [D] [thread 1342] [89.0] [cxt 0] Deparser 'deparser': end
+[12:32:42.261] [bmv2] [D] [thread 1346] [89.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Processing packet received on port 1
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Parser 'parser': start
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Extracting header 'ethernet'
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:42.315] [bmv2] [T] [thread 1341] [90.0] [cxt 0] Bytes parsed: 14
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Parser 'parser': end
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Pipeline 'ingress': start
+[12:32:42.315] [bmv2] [T] [thread 1341] [90.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Pipeline 'ingress': end
+[12:32:42.315] [bmv2] [D] [thread 1341] [90.0] [cxt 0] Egress port is 0
+[12:32:42.315] [bmv2] [D] [thread 1342] [90.0] [cxt 0] Pipeline 'egress': start
+[12:32:42.315] [bmv2] [D] [thread 1342] [90.0] [cxt 0] Pipeline 'egress': end
+[12:32:42.315] [bmv2] [D] [thread 1342] [90.0] [cxt 0] Deparser 'deparser': start
+[12:32:42.315] [bmv2] [D] [thread 1342] [90.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:42.315] [bmv2] [D] [thread 1342] [90.0] [cxt 0] Deparser 'deparser': end
+[12:32:42.315] [bmv2] [D] [thread 1346] [90.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:42.534] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Processing packet received on port 2
+[12:32:42.534] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Parser 'parser': start
+[12:32:42.534] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:42.534] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Extracting header 'ethernet'
+[12:32:42.534] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:42.535] [bmv2] [T] [thread 1341] [91.0] [cxt 0] Bytes parsed: 14
+[12:32:42.535] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Parser 'parser': end
+[12:32:42.535] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Pipeline 'ingress': start
+[12:32:42.535] [bmv2] [T] [thread 1341] [91.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:42.535] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Pipeline 'ingress': end
+[12:32:42.535] [bmv2] [D] [thread 1341] [91.0] [cxt 0] Egress port is 0
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Processing packet received on port 3
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Parser 'parser': start
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Extracting header 'ethernet'
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:42.535] [bmv2] [T] [thread 1341] [92.0] [cxt 0] Bytes parsed: 14
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Parser 'parser': end
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Pipeline 'ingress': start
+[12:32:42.535] [bmv2] [T] [thread 1341] [92.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Pipeline 'ingress': end
+[12:32:42.535] [bmv2] [D] [thread 1341] [92.0] [cxt 0] Egress port is 0
+[12:32:42.535] [bmv2] [D] [thread 1342] [91.0] [cxt 0] Pipeline 'egress': start
+[12:32:42.535] [bmv2] [D] [thread 1342] [91.0] [cxt 0] Pipeline 'egress': end
+[12:32:42.535] [bmv2] [D] [thread 1342] [91.0] [cxt 0] Deparser 'deparser': start
+[12:32:42.535] [bmv2] [D] [thread 1342] [91.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:42.535] [bmv2] [D] [thread 1342] [91.0] [cxt 0] Deparser 'deparser': end
+[12:32:42.535] [bmv2] [D] [thread 1342] [92.0] [cxt 0] Pipeline 'egress': start
+[12:32:42.535] [bmv2] [D] [thread 1342] [92.0] [cxt 0] Pipeline 'egress': end
+[12:32:42.535] [bmv2] [D] [thread 1342] [92.0] [cxt 0] Deparser 'deparser': start
+[12:32:42.535] [bmv2] [D] [thread 1342] [92.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:42.535] [bmv2] [D] [thread 1342] [92.0] [cxt 0] Deparser 'deparser': end
+[12:32:42.535] [bmv2] [D] [thread 1346] [91.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:42.535] [bmv2] [D] [thread 1346] [92.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Processing packet received on port 2
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Parser 'parser': start
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Extracting header 'ethernet'
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Parser state 'start': key is 86dd
+[12:32:42.868] [bmv2] [T] [thread 1341] [93.0] [cxt 0] Bytes parsed: 14
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Parser 'parser': end
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Pipeline 'ingress': start
+[12:32:42.868] [bmv2] [T] [thread 1341] [93.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Pipeline 'ingress': end
+[12:32:42.868] [bmv2] [D] [thread 1341] [93.0] [cxt 0] Egress port is 0
+[12:32:42.868] [bmv2] [D] [thread 1342] [93.0] [cxt 0] Pipeline 'egress': start
+[12:32:42.868] [bmv2] [D] [thread 1342] [93.0] [cxt 0] Pipeline 'egress': end
+[12:32:42.868] [bmv2] [D] [thread 1342] [93.0] [cxt 0] Deparser 'deparser': start
+[12:32:42.868] [bmv2] [D] [thread 1342] [93.0] [cxt 0] Deparsing header 'ethernet'
+[12:32:42.868] [bmv2] [D] [thread 1342] [93.0] [cxt 0] Deparser 'deparser': end
+[12:32:42.868] [bmv2] [D] [thread 1346] [93.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Processing packet received on port 3
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Parser 'parser': start
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Extracting header 'ethernet'
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Parser state 'start': key is 86dd
+[12:33:46.252] [bmv2] [T] [thread 1341] [94.0] [cxt 0] Bytes parsed: 14
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Parser 'parser': end
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Pipeline 'ingress': start
+[12:33:46.252] [bmv2] [T] [thread 1341] [94.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Pipeline 'ingress': end
+[12:33:46.252] [bmv2] [D] [thread 1341] [94.0] [cxt 0] Egress port is 0
+[12:33:46.252] [bmv2] [D] [thread 1342] [94.0] [cxt 0] Pipeline 'egress': start
+[12:33:46.252] [bmv2] [D] [thread 1342] [94.0] [cxt 0] Pipeline 'egress': end
+[12:33:46.252] [bmv2] [D] [thread 1342] [94.0] [cxt 0] Deparser 'deparser': start
+[12:33:46.252] [bmv2] [D] [thread 1342] [94.0] [cxt 0] Deparsing header 'ethernet'
+[12:33:46.252] [bmv2] [D] [thread 1342] [94.0] [cxt 0] Deparser 'deparser': end
+[12:33:46.252] [bmv2] [D] [thread 1346] [94.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Processing packet received on port 1
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Parser 'parser': start
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Extracting header 'ethernet'
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Parser state 'start': key is 86dd
+[12:33:46.307] [bmv2] [T] [thread 1341] [95.0] [cxt 0] Bytes parsed: 14
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Parser 'parser': end
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Pipeline 'ingress': start
+[12:33:46.307] [bmv2] [T] [thread 1341] [95.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Pipeline 'ingress': end
+[12:33:46.307] [bmv2] [D] [thread 1341] [95.0] [cxt 0] Egress port is 0
+[12:33:46.307] [bmv2] [D] [thread 1342] [95.0] [cxt 0] Pipeline 'egress': start
+[12:33:46.307] [bmv2] [D] [thread 1342] [95.0] [cxt 0] Pipeline 'egress': end
+[12:33:46.307] [bmv2] [D] [thread 1342] [95.0] [cxt 0] Deparser 'deparser': start
+[12:33:46.307] [bmv2] [D] [thread 1342] [95.0] [cxt 0] Deparsing header 'ethernet'
+[12:33:46.307] [bmv2] [D] [thread 1342] [95.0] [cxt 0] Deparser 'deparser': end
+[12:33:46.307] [bmv2] [D] [thread 1346] [95.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Processing packet received on port 2
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Parser 'parser': start
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Extracting header 'ethernet'
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Parser state 'start': key is 86dd
+[12:33:46.539] [bmv2] [T] [thread 1341] [96.0] [cxt 0] Bytes parsed: 14
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Parser 'parser': end
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Pipeline 'ingress': start
+[12:33:46.539] [bmv2] [T] [thread 1341] [96.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Pipeline 'ingress': end
+[12:33:46.539] [bmv2] [D] [thread 1341] [96.0] [cxt 0] Egress port is 0
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Processing packet received on port 3
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Parser 'parser': start
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Extracting header 'ethernet'
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Parser state 'start': key is 86dd
+[12:33:46.539] [bmv2] [T] [thread 1341] [97.0] [cxt 0] Bytes parsed: 14
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Parser 'parser': end
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Pipeline 'ingress': start
+[12:33:46.539] [bmv2] [T] [thread 1341] [97.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Pipeline 'ingress': end
+[12:33:46.539] [bmv2] [D] [thread 1341] [97.0] [cxt 0] Egress port is 0
+[12:33:46.539] [bmv2] [D] [thread 1342] [96.0] [cxt 0] Pipeline 'egress': start
+[12:33:46.539] [bmv2] [D] [thread 1342] [96.0] [cxt 0] Pipeline 'egress': end
+[12:33:46.539] [bmv2] [D] [thread 1342] [96.0] [cxt 0] Deparser 'deparser': start
+[12:33:46.539] [bmv2] [D] [thread 1342] [96.0] [cxt 0] Deparsing header 'ethernet'
+[12:33:46.539] [bmv2] [D] [thread 1342] [96.0] [cxt 0] Deparser 'deparser': end
+[12:33:46.539] [bmv2] [D] [thread 1342] [97.0] [cxt 0] Pipeline 'egress': start
+[12:33:46.539] [bmv2] [D] [thread 1342] [97.0] [cxt 0] Pipeline 'egress': end
+[12:33:46.539] [bmv2] [D] [thread 1342] [97.0] [cxt 0] Deparser 'deparser': start
+[12:33:46.539] [bmv2] [D] [thread 1342] [97.0] [cxt 0] Deparsing header 'ethernet'
+[12:33:46.539] [bmv2] [D] [thread 1342] [97.0] [cxt 0] Deparser 'deparser': end
+[12:33:46.539] [bmv2] [D] [thread 1346] [96.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:33:46.539] [bmv2] [D] [thread 1346] [97.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[12:33:46.871] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Processing packet received on port 2
+[12:33:46.872] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Parser 'parser': start
+[12:33:46.872] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:33:46.872] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Extracting header 'ethernet'
+[12:33:46.872] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Parser state 'start': key is 86dd
+[12:33:46.872] [bmv2] [T] [thread 1341] [98.0] [cxt 0] Bytes parsed: 14
+[12:33:46.872] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Parser 'parser': end
+[12:33:46.872] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Pipeline 'ingress': start
+[12:33:46.872] [bmv2] [T] [thread 1341] [98.0] [cxt 0] source_routing.p4(132) Condition "hdr.labelRoute.isValid()" (node_2) is false
+[12:33:46.872] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Pipeline 'ingress': end
+[12:33:46.872] [bmv2] [D] [thread 1341] [98.0] [cxt 0] Egress port is 0
+[12:33:46.872] [bmv2] [D] [thread 1342] [98.0] [cxt 0] Pipeline 'egress': start
+[12:33:46.872] [bmv2] [D] [thread 1342] [98.0] [cxt 0] Pipeline 'egress': end
+[12:33:46.872] [bmv2] [D] [thread 1342] [98.0] [cxt 0] Deparser 'deparser': start
+[12:33:46.872] [bmv2] [D] [thread 1342] [98.0] [cxt 0] Deparsing header 'ethernet'
+[12:33:46.872] [bmv2] [D] [thread 1342] [98.0] [cxt 0] Deparser 'deparser': end
+[12:33:46.872] [bmv2] [D] [thread 1346] [98.0] [cxt 0] Transmitting packet of size 107 out of port 0
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory

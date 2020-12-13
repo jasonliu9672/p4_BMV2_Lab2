@@ -1,0 +1,17 @@
+{
+  "target": "bmv2",
+  "p4info": "build/source_routing.p4.p4info.txt",
+  "bmv2_json": "build/source_routing.json",
+  "table_entries": [ 
+    {
+      "table": "MyIngress.label_exact",
+      "match": {
+        "hdr.labelRoute.label": 1
+      },
+      "action_name": "MyIngress.pop_label_output",
+      "action_params": {
+        "port": 1
+      }
+    }
+  ]
+} 
